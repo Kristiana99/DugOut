@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Footer</title>
-
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<link href="/css/common.css" rel="stylesheet" />
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -14,7 +15,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		<div class="footer-inner">
 			<div class="footer-grid">
 				<div class="footer-section">
-					<h3>⚾ KBO</h3>
+					<h3>⚾ KBO</h3><br>
 					<p>야구 팬을 위한<br>최고의 커뮤니티 시스템</p>
 				</div>
 				
@@ -27,24 +28,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 						</li>
 						<li>
 							<i class="fa-solid fa-envelope"></i> 
-							help @ baseball.com
+							help@baseball.com
 						</li>
 						<li>
 							<i class="fa-solid fa-clock"></i>
 							평일 09:00 - 18:00
 						</li>
 					</ul>
-					<div class="footer-section">
-						<h4>SNS</h4>
-						<div class="footer-sns">
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-youtube"></i></a>
-							<a href="#"><i class="fab fa-facebook"></i></a>
-						</div>
+				</div>
+				<div class="footer-section">
+					<h4>SNS</h4>
+					<div class="footer-sns">
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-facebook"></i></a>
 					</div>
 				</div>
-				
 				<div class="footer-bottom">
 					<p>&copy; 2002 KBO. All Rights Reserved. </p>
 				</div>

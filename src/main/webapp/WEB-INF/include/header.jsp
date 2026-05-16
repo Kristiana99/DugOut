@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>header</title>
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<link href="/css/common.css" rel="stylesheet" />
 </head>
 <body>
 	<header class="main-header">
@@ -17,24 +19,24 @@
 			<nav class="header-nav">
 				<ul>
 					<li>
-						|<a href="${pageContext.request.contextPath}/home.jsp">
+						<a href="${pageContext.request.contextPath}/home.jsp">
 							홈
-						</a>|
+						</a>
 					</li>
 					<li>
-						|<a href="${pageContext.request.contextPath}/board/list.jsp">
+						<a href="${pageContext.request.contextPath}/board/list.jsp">
 							자유게시판
-						</a>|
+						</a>
 					</li>
 					<li>
-						|<a href="${pageContext.request.contextPath}/game.jsp">
+						<a href="${pageContext.request.contextPath}/game.jsp">
 							경기 일정
-						</a>|
+						</a>
 					</li>
 					<li>
-						|<a href="${pageContext.request.contextPath}/board/info.jsp">
+						<a href="${pageContext.request.contextPath}/board/info.jsp">
 							공지사항
-						</a>|
+						</a>
 					</li>
 				</ul>
 			</nav>

@@ -20,7 +20,7 @@
 			</div>		
 			<button type="submit" class="btn-login">로그인</button>	
 			<div><a href="#">비밀번호를 잊으셨나요?</a></div>
-			<div><a href="/Users/WriteForm">회원가입</a></div>
+			<div><a href="/Users/WriteForm">회원가입</a></div> 
 		</form>
 	</main>
 </body>

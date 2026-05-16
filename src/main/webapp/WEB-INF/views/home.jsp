@@ -27,14 +27,16 @@
 <!-- content box -->
 		<section class="boardSection">
 			<div class="boardBox">
-				<div><a href="/Users/List">자유게시판</a></div>								
+				<div><a href="/Users/List">자유게시판</a></div>	
+				<div class="boardBox-ex">야구에 관한 모든 이야기</div>							
 			</div>
 			<div class="boardBox">
 				<div><a href="/Users/List">공지사항</a></div>				
+				<div class="boardBox-ex">구단에서 전해드리는 공지사항</div>							
 			</div>
 			<div class="boardBox">
 				<div><a href="/Users/List">팬 리스트</a></div>
-				
+				<div class="boardBox-ex">팬 누구있노~?</div>							
 			</div>
 		</section>
 <!-- footer -->
