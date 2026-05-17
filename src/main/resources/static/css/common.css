@@ -22,12 +22,9 @@ a {
 ul, ol {
 	list-style: none;
 }
-
-
-
-
 /*-----------------------------------------------------------------*/
-													/*		header		*/
+/*													header													*/
+/*-----------------------------------------------------------------*/
 .main-header {
 	
 	position:fixed;
@@ -103,7 +100,8 @@ ul, ol {
 	transition: color 0.2s ease;
 }
 /*-----------------------------------------------------------------*/
-												/*	Main Banner	*/
+/*												Main Banner													*/
+/*-----------------------------------------------------------------*/
 #main-bn{
 	position : relative;
 	width : 100%;	
@@ -180,7 +178,8 @@ ul, ol {
 }
 
 /*-----------------------------------------------------------------*/
-													/* 	Home-Board	*/
+/*													Home-Board														*/
+/*-----------------------------------------------------------------*/
 .boardSection {
 	max-width : 1400px;
 	width : 100%;
@@ -236,7 +235,8 @@ ul, ol {
 }
 
 /*-----------------------------------------------------------------*/
-												/* 	footer.jsp	*/
+/*												footer.jsp													*/
+/*-----------------------------------------------------------------*/
 .main-footer {
 	margin-top: auto;
 	background: #060f1a;
@@ -327,6 +327,7 @@ ul, ol {
 }
 /*-----------------------------------------------------------------*/
 													/*		Login		*/
+/*-----------------------------------------------------------------*/
 													
 .login-form {
     max-width: 480px;
@@ -499,7 +500,8 @@ ul, ol {
 
 
 /*-----------------------------------------------------------------*/
-													/*	userList	*/
+/*														userList													*/
+/*-----------------------------------------------------------------*/
 .listSection {
 	max-width : 1400px;
 	width : 95%;
@@ -529,7 +531,6 @@ ul, ol {
 	border-radius : 12px;
 	overflow:hidden;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-	
 }
 .list-menu {
 	background : linear-gradient(150deg, #1e3a8a 0%, #1e40af 100%);
@@ -569,7 +570,6 @@ ul, ol {
 	background: rgba(20,40,60,0.5);
 	box-shadow : -4px 0 0 #60a5fa;
 	transform: translateX(3px);
-	
 }
 .list-row	td {
 	padding : 15px 12px;
@@ -581,19 +581,193 @@ ul, ol {
 	color : #34d399;
 	width:10px;
 	padding: 10px;
-
 }
 .list-upbtn	a:hover {
-		transform: translateY(-2px);
+	transform: translateY(-2px);
 
+}
+
+
+
+/*-----------------------------------------------------------------*/
+/*														users/update													*/
+/*-----------------------------------------------------------------*/
+.update-form {
+	max-width : 700px;
+	margin: 140px auto 80px;
+	padding: 45px;
+	background: rgba(15, 23, 42, 0.7);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+	backdrop-filter: blur(12px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+.update-form h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 35px;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	padding-bottom: 16px;
+}
+.update-form h2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70px;
+	height: 3px;
+	background: #3b82f6;
+	border-radius: 3px;
+}
+.update-table {
+	width: 100%;
+border-collapse: collapse;
+}
+.update-table tr {
+	border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.update-table tr:last-child {
+	border-bottom: none;
+}
+.up-menu {
+	width: 140px;
+	padding: 24px 15px 24px 0;
+	color: #e2e8f0;
+	font-size: 15px;
+	font-weight: 600;
+	vertical-align: top;
+	padding-top: 28px;
+}
+.update-table td:last-child {
+	padding: 20px 0;
+}
+.update-table input[type="text"],
+.update-table input[type="password"],
+.update-table input[type="email"] {
+	width: 100%;
+	padding: 14px 16px;
+	background: rgba(30, 41, 59, 0.65);
+	border: 1.5px solid rgba(255,255,255,0.08);
+	border-radius: 10px;
+	color: #e2e8f0;
+	font-size: 15px;
+	outline: none;
+	transition: all 0.3s ease;
+}
+.update-table input[type="text"]:focus,
+.update-table input[type="password"]:focus,
+.update-table input[type="email"]:focus {
+	border-color: #60a5fa;
+	background: rgba(30, 41, 59, 0.9);
+	box-shadow: 0 0 0 3px rgba(96,165,250,0.12);
+	transform: translateY(-1px);
+}
+.update-table input[readonly] {
+	background: rgba(30, 41, 59, 0.35);
+	color: #94a3b8;
+	cursor: not-allowed;
+}
+#pwMsg1,
+#pwMsg2,
+#nameMsg,
+#emailMsg {
+	display: inline-block;
+	margin-top: 8px;
+	font-size: 12px;
+	min-height: 16px;
+}
+.update-table tr:last-child td {
+	padding-top: 35px;
+	text-align: center;
+}
+.update-table input[type="submit"],
+.update-table input[type="button"] {
+	padding: 13px 30px;
+	border: none;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.25s ease;
+	margin: 0 5px;
+}
+.update-table input[type="submit"] {
+    background: #3b82f6;
+    color: white;
+}
+.update-table input[type="submit"]:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+.update-table input[type="button"] {
+    background: rgba(71,85,105,0.9);
+    color: #e2e8f0;
+}
+.update-table input[type="button"]:hover {
+    background: rgba(100,116,139,1);
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+	main section {
+	    margin: 120px 20px 60px;
+	    padding: 35px 25px;
 	}
-
-
-
-
-
-
-
+	
+	main section h2 {
+	    font-size: 28px;
+	}
+	
+	.up-menu {
+	    width: 110px;
+	    font-size: 14px;
+	}
+	.update-table input[type="text"],
+	.update-table input[type="password"],
+	.update-table input[type="email"] {
+	    padding: 13px 14px;
+	    font-size: 14px;
+	}
+}
+.update-table tr:first-child td:last-child {
+	position: relative;
+}
+.id-check-wrap {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+#userId {
+	width: calc(100% - 110px);
+	margin-right: 10px;
+}
+#idCheck {
+	width: 95px;
+	padding: 14px 10px;
+	border: none;
+	border-radius: 10px;
+	background: rgba(59, 130, 246, 0.15);
+	border: 1px solid rgba(59, 130, 246, 0.4);
+	color: #60a5fa;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.25s ease;
+	vertical-align: top;
+}
+#idCheck:hover {
+	background: rgba(59, 130, 246, 0.25);
+	color: #93c5fd;
+	transform: translateY(-1px);
+}
+#idCheck:active {
+	transform: translateY(0);
+}
 
 
 
@@ -626,53 +800,53 @@ ul, ol {
 /*-----------------------------------------------------------------*/
 /*----------------------반응형-------------*/
 @media (max-width: 1024px) {
-    .boardSection {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    #main-title h1 {
-        font-size: 60px;
-    }
+	.boardSection {
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	.footer-grid {
+	    grid-template-columns: 1fr 1fr;
+	}
+	#main-title h1 {
+	    font-size: 60px;
+	}
 }
 
 @media (max-width: 768px) {
-    .header-inner {
-        padding: 14px 20px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .header-nav ul {
-        gap: 0;
-    }
-    .header-nav ul li a {
-        padding: 4px 8px;
-        font-size: 13px;
-    }
-    #main-bn {
-        height: 360px;
-    }
-    #main-title h1 {
-        font-size: 44px;
-        letter-spacing: 3px;
-    }
-    #main-title p {
-        font-size: 14px;
-        padding: 0 20px;
-    }
-    .boardSection {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-        margin: -60px auto 60px;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    .footer-inner {
-        padding: 0 20px;
-    }
+	.header-inner {
+	    padding: 14px 20px;
+	    flex-wrap: wrap;
+	    gap: 10px;
+	}
+	.header-nav ul {
+	    gap: 0;
+	}
+	.header-nav ul li a {
+	    padding: 4px 8px;
+	    font-size: 13px;
+	}
+	#main-bn {
+	    height: 360px;
+	}
+	#main-title h1 {
+	    font-size: 44px;
+	    letter-spacing: 3px;
+	}
+	#main-title p {
+	    font-size: 14px;
+	    padding: 0 20px;
+	}
+	.boardSection {
+	    grid-template-columns: 1fr;
+	    padding: 0 20px;
+	    margin: -60px auto 60px;
+	}
+	.footer-grid {
+	    grid-template-columns: 1fr;
+	    gap: 24px;
+	}
+	.footer-inner {
+	    padding: 0 20px;
+	}
 }
 /*----------------------------------------------------*/
 /*											login form										*/
@@ -778,10 +952,6 @@ ul, ol {
     -webkit-box-shadow: 0 0 0 1000px rgba(30, 41, 59, 0.9) inset;
     -webkit-text-fill-color: #e0e6ed;
 }
-/**/
-/**/
-
-
 @media (max-width: 1024px) {
 	.listSection {
 	    margin: 100px auto 40px;

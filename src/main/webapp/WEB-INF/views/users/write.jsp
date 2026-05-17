@@ -13,20 +13,23 @@
 	<%@ include file="/WEB-INF/include/header.jsp" %>
 	
 	<main>
+	<section class="update-form">
 		<h2>사용자 등록</h2>
 		<form action="/Users/Write" method="post">
-			<table>
+			<table class="update-table">
 				<tr>
-					<td>새 아이디</td>
+					<td class="up-menu">새 아이디</td>
 					<td>
-						<input type="text" name="userId" id="userId">
-						<input type="button" id="idCheck" value="중복확인">
+						<div class="id-check-wrap">
+							<input type="text" name="userId" id="userId">
+							<input type="button" id="idCheck" value="중복확인">
+						</div>
 						<br>
 						<span id="idMsg"></span>
 					</td>
 				</tr>
 				<tr>
-					<td>비밀번호</td>
+					<td class="up-menu">비밀번호</td>
 					<td>
 						<input type="password" name="password" id="password">
 						<br>
@@ -34,7 +37,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>비밀번호 확인</td>
+					<td class="up-menu">비밀번호 확인</td>
 					<td>
 						<input type="password" name="password2" id="password2"/>
 						<br>
@@ -42,7 +45,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>이름</td>
+					<td class="up-menu">이름</td>
 					<td>
 						<input type="text" name="userName" id="userName">
 						<br>
@@ -50,7 +53,7 @@
 					</td>
 				</tr>				
 				<tr>
-					<td>이메일</td>
+					<td class="up-menu">이메일</td>
 					<td>
 						<input type="email" name="email" id="email">
 						<br>
@@ -67,6 +70,7 @@
 				</tr>
 			</table>
 		</form>
+	</section>
 	</main>
 	<!-- footer -->
 	<%@ include file="/WEB-INF/include/footer.jsp" %>
