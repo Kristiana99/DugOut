@@ -9,6 +9,8 @@
 <link href="/css/common.css" rel="stylesheet" />
 </head>
 <body>
+	<!-- header -->
+	<%@ include file="/WEB-INF/include/header.jsp" %>
 	<main>
 		<h2>사용자 등록</h2>
 		<form action="/Users/Update" method="post">
@@ -62,6 +64,8 @@
 			</table>
 		</form>
 	</main>
+<!-- footer -->
+	<%@ include file="/WEB-INF/include/footer.jsp" %>
 	<script>
 
 			//메세지 표시하기

@@ -19,7 +19,7 @@
 			<nav class="header-nav">
 				<ul>
 					<li>
-						<a href="${pageContext.request.contextPath}/home.jsp">
+						<a href="/WEB-INF/views/home.jsp">
 							홈
 						</a>
 					</li>

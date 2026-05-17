@@ -10,10 +10,9 @@
 <link href="/css/common.css" rel="stylesheet" />
 </head>
 <body>
-	<main>
 <!-- header -->
-		<%@ include file="/WEB-INF/include/header.jsp" %>
-
+	<%@ include file="/WEB-INF/include/header.jsp" %>
+	<main>
 <!-- main banner -->
 		<section id="main-bn">
 			<div id="main-title">
@@ -39,9 +38,9 @@
 				<div class="boardBox-ex">팬 누구있노~?</div>							
 			</div>
 		</section>
+	</main>
 <!-- footer -->
 		<%@ include file="/WEB-INF/include/footer.jsp" %>
-	</main>
 </body>
 
 </html>
